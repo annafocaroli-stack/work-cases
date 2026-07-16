@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FEFDFB; }
+  ::selection { background: #B2E0DE; color: #2C2B28; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</helmet>
+
+<div id="af-portfolio" style="background:#FEFDFB;color:#2C2B28;font-family:'Source Serif 4',Georgia,serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;">
+
+  <!-- NAV -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;background:rgba(254,253,251,0.82);backdrop-filter:blur(10px);border-bottom:0.5px solid #EDEBE5;">
+    <a href="#hero" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:14px;letter-spacing:0.4px;color:#2C2B28;text-decoration:none;">Anna Focaroli</a>
+    <div style="display:flex;align-items:center;gap:28px;">
+      <a href="#service" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:0.5px;color:#5C5B56;text-decoration:none;display:flex;align-items:center;gap:7px;" style-hover="color:#006D73;"><span style="width:7px;height:7px;border-radius:50%;background:#006D73;display:inline-block;"></span>Service</a>
+      <a href="#research" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:0.5px;color:#5C5B56;text-decoration:none;display:flex;align-items:center;gap:7px;" style-hover="color:#6955BE;"><span style="width:7px;height:7px;border-radius:50%;background:#6955BE;display:inline-block;"></span>Research</a>
+      <a href="#ops" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:0.5px;color:#5C5B56;text-decoration:none;display:flex;align-items:center;gap:7px;" style-hover="color:#2C2B28;"><span style="display:inline-flex;align-items:center;"><span style="width:7px;height:7px;border-radius:50%;background:rgba(0,109,115,0.85);mix-blend-mode:multiply;display:inline-block;"></span><span style="width:7px;height:7px;border-radius:50%;background:rgba(105,85,190,0.85);mix-blend-mode:multiply;display:inline-block;margin-left:-3px;"></span></span>ResearchOps</a>
+      <a href="#about" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:0.5px;color:#5C5B56;text-decoration:none;" style-hover="color:#2C2B28;">About</a>
+      <a href="#contact" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:0.5px;color:#FEFDFB;text-decoration:none;background:#2C2B28;padding:8px 16px;border-radius:20px;" style-hover="background:#006D73;">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" style="position:relative;min-height:100vh;overflow:hidden;background:#FEFDFB;">
+    <div style="position:relative;z-index:2;display:grid;grid-template-columns:1.05fr 0.95fr;align-items:center;gap:48px;padding:140px 48px 0;max-width:1320px;margin:0 auto;box-sizing:border-box;min-height:100vh;">
+    <div>
+      <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#9C9A92;margin-bottom:28px;">Research Operation Specialist</div>
+      <h1 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:clamp(40px,5.2vw,68px);line-height:1.08;letter-spacing:-0.5px;margin:0 0 28px;color:#2C2B28;">Anna Focaroli</h1>
+      <p style="font-family:'Source Serif 4',Georgia,serif;font-size:21px;line-height:1.6;color:#5C5B56;max-width:30ch;margin:0 0 36px;">7+ years of practice through <em style="font-style:italic;color:#006D73;">two lenses</em>, Service Design and Research, fused to enhance the <em style="font-style:italic;color:#6955BE;">Research Operation</em> practice.</p>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:16px;">
+        <a href="#service" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.4px;color:#FEFDFB;text-decoration:none;background:#2C2B28;padding:13px 24px;border-radius:24px;transition:background 0.3s,box-shadow 0.3s,transform 0.3s;" style-hover="background:#006D73;box-shadow:0 10px 24px rgba(44,43,40,0.32);transform:translateY(-2px);">Explore the work</a>
+        <a href="#about" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.4px;color:#2C2B28;text-decoration:none;background:#F7F5F0;padding:13px 24px;border-radius:24px;transition:background 0.3s,box-shadow 0.3s,transform 0.3s;" style-hover="background:#EDEBE5;box-shadow:0 10px 24px rgba(44,43,40,0.32);transform:translateY(-2px);">The journey</a>
+      </div>
+    </div>
+
+    <!-- LENSES — two overlapping circles whose intersection is the ResearchOps CTA -->
+    <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:26px;transform:translateY(45px);">
+      <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+        <!-- left lens: Service -->
+        <a href="#service" onMouseEnter="{{ onEnterService }}" onMouseLeave="{{ onLeave }}" aria-label="Service &amp; UX Design" style="position: relative; display: flex; align-items: center; justify-content: center; width: 280px; height: 280px; border-radius: 50%; border: 1.5px solid #2C2B28; text-decoration: none; cursor: pointer; transition: transform 0.35s cubic-bezier(0.22,1,0.36,1); border-width: 0px" style-hover="transform:translateY(-4px);">
+          <span style="position:absolute;inset:0;border-radius:50%;background:rgba(0,109,115,0.42);mix-blend-mode:multiply;transition:background 0.35s cubic-bezier(0.22,1,0.36,1);"></span>
+          <span style="position:relative;z-index:1;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:16px;letter-spacing:0.6px;text-transform:uppercase;color:#0A4F53;text-align:center;line-height:1.4;transform:translateX(-32px);">Service<br>&amp; UX Design</span>
+        </a>
+        <!-- right lens: Research (overlaps the left one) -->
+        <a href="#research" onMouseEnter="{{ onEnterResearch }}" onMouseLeave="{{ onLeave }}" aria-label="User &amp; Product Research" style="position: relative; display: flex; align-items: center; justify-content: center; width: 280px; height: 280px; border-radius: 50%; border: 1.5px solid #2C2B28; text-decoration: none; cursor: pointer; margin-left: -90px; transition: transform 0.35s cubic-bezier(0.22,1,0.36,1); border-width: 0px" style-hover="transform:translateY(-4px);">
+          <span style="position:absolute;inset:0;border-radius:50%;background:rgba(105,85,190,0.42);mix-blend-mode:multiply;transition:background 0.35s cubic-bezier(0.22,1,0.36,1);"></span>
+          <span style="position:relative;z-index:1;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:16px;letter-spacing:0.6px;text-transform:uppercase;color:#473A80;text-align:center;line-height:1.4;transform:translateX(32px);">User<br>&amp; Product<br>Research</span>
+        </a>
+        <!-- intersection: the actual lens-shaped overlap, clickable → ResearchOps -->
+        <a href="#ops" onMouseEnter="{{ onEnterOps }}" onMouseLeave="{{ onLeave }}" aria-label="ResearchOps work" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:3;width:90px;height:208px;border-radius:50% / 50%;cursor:pointer;background:transparent;transition:background 0.35s cubic-bezier(0.22,1,0.36,1);" style-hover="background:rgba(44,43,40,0.06);"></a>
+      </div>
+      <!-- CTA title below the lenses, on hover -->
+      <a href="#ops" onMouseEnter="{{ onEnterOps }}" onMouseLeave="{{ onLeave }}" style="display:inline-flex;align-items:center;gap:9px;min-height:20px;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:0.7px;text-transform:uppercase;text-decoration:none;color:{{ opsLinkColor }};opacity:{{ opsOpacity }};transform:translateY({{ opsShift }});transition:opacity 0.3s,transform 0.3s,color 0.3s;">
+        <span style="display:inline-flex;align-items:center;"><span style="width:11px;height:11px;border-radius:50%;background:rgba(0,109,115,0.7);mix-blend-mode:multiply;display:inline-block;"></span><span style="width:11px;height:11px;border-radius:50%;background:rgba(105,85,190,0.7);mix-blend-mode:multiply;display:inline-block;margin-left:-5px;"></span></span>
+        <span>ResearchOps work</span>
+        <span style="font-size:14px;line-height:1;">→</span>
+      </a>
+    </div>
+    </div>
+  </header>
+
+  <!-- TRANSITION STRIP -->
+  <section style="padding:36px 48px;border-top:0.5px solid #EDEBE5;border-bottom:0.5px solid #EDEBE5;background:#F7F5F0;">
+    <div style="max-width:1320px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;">
+      <p data-reveal="" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:clamp(20px,2.4vw,30px);line-height:1.2;color:#2C2B28;margin:0;max-width:22ch;">Two disciplines. <span style="color:#006D73;">One</span> operational <span style="color:#6955BE;">practice</span>.</p>
+      <div style="display:flex;gap:40px;font-family:'Helvetica Neue',Arial,sans-serif;">
+        <div><div style="font-weight:300;font-size:32px;color:#2C2B28;">7+</div><div style="font-size:11px;letter-spacing:0.8px;text-transform:uppercase;color:#9C9A92;margin-top:4px;">years</div></div>
+        <div><div style="font-weight:300;font-size:32px;color:#006D73;">3</div><div style="font-size:11px;letter-spacing:0.8px;text-transform:uppercase;color:#9C9A92;margin-top:4px;">ROLES COVERED</div></div>
+        <div><div style="font-weight:300;font-size:32px;color:#6955BE;">5</div><div style="font-size:11px;letter-spacing:0.8px;text-transform:uppercase;color:#9C9A92;margin-top:4px;">case studies</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE SECTION -->
+  <section id="service" style="background:#E5F4F3;padding:120px 48px;position:relative;overflow:hidden;">
+    <div data-lens-bg="" style="position:absolute;top:-120px;right:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(0,109,115,0.16),rgba(0,109,115,0) 70%);pointer-events:none;"></div>
+    <div style="max-width:1320px;margin:0 auto;position:relative;">
+      <div data-reveal="" style="display:flex;align-items:center;gap:14px;margin-bottom:18px;">
+        <span style="width:11px;height:11px;border-radius:50%;background:#006D73;display:inline-block;"></span>
+        <span style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#006D73;">Service &amp; UX Design</span>
+      </div>
+      <div data-reveal="" style="display:grid;grid-template-columns:1.05fr 0.95fr;gap:48px;align-items:end;margin-bottom:24px;">
+        <h2 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:clamp(30px,3.6vw,46px);line-height:1.12;letter-spacing:-0.3px;color:#2C2B28;margin:0;">Designing AI solutions to enhance human experiences</h2>
+        <div style="display:inline-block;justify-self:start;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:11px;letter-spacing:0.5px;text-transform:uppercase;color:#006D73;background:rgba(0,109,115,0.10);padding:6px 13px;border-radius:20px;">{{ serviceFeature.tag }}</div>
+      </div>
+      <div data-reveal="" style="display:grid;grid-template-columns:1.05fr 0.95fr;gap:48px;align-items:start;">
+        <div>
+          <h3 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:clamp(26px,2.8vw,34px);line-height:1.16;letter-spacing:-0.3px;color:#2C2B28;margin:0 0 16px;">{{ serviceFeature.title }}</h3>
+          <p style="font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.7;color:#5C5B56;margin:0 0 28px;text-wrap:pretty;">{{ serviceFeature.subtitle }}</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px 28px;padding:22px 0;border-top:0.5px solid #D6E7E5;border-bottom:0.5px solid #D6E7E5;margin-bottom:28px;">
+            <sc-for list="{{ serviceFeature.meta }}" as="m" hint-placeholder-count="4">
+              <div>
+                <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.8px;text-transform:uppercase;color:#9C9A92;margin-bottom:5px;">{{ m.label }}</div>
+                <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:1.4;color:#2C2B28;">{{ m.value }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <a href="#" onClick="{{ serviceFeature.open }}" style="display:inline-flex;align-items:center;gap:9px;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.3px;color:#FEFDFB;text-decoration:none;background:#006D73;padding:13px 24px;border-radius:24px;transition:background 0.3s,box-shadow 0.3s,transform 0.3s;" style-hover="background:#005056;box-shadow:0 10px 24px rgba(0,109,115,0.32);transform:translateY(-2px);">Read the full case<span>→</span></a>
+        </div>
+        <a href="#" onClick="{{ serviceFeature.open }}" style="position:relative;display:block;text-decoration:none;border-radius:14px;overflow:hidden;border:0.5px solid #D6E7E5;transition:transform 0.35s,box-shadow 0.35s;" style-hover="transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,109,115,0.18);">
+          <img src="uploads/image1.png" alt="AIDA — the companion app shown on a phone, used by a caregiver" style="display:block;width:100%;aspect-ratio:4/3;object-fit:cover;">
+          <span style="position:absolute;bottom:14px;right:14px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:#FEFDFB;background:rgba(0,109,115,0.92);padding:6px 12px;border-radius:16px;">{{ serviceFeature.time }}</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH SECTION -->
+  <section id="research" style="background:#EFEDF8;padding:120px 48px;position:relative;overflow:hidden;">
+    <div data-lens-bg="" style="position:absolute;top:-140px;left:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(105,85,190,0.16),rgba(105,85,190,0) 70%);pointer-events:none;"></div>
+    <div style="max-width:1320px;margin:0 auto;position:relative;">
+      <div data-reveal="" style="display:flex;align-items:center;gap:14px;margin-bottom:18px;">
+        <span style="width:11px;height:11px;border-radius:50%;background:#6955BE;display:inline-block;"></span>
+        <span style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#6955BE;">User &amp; Product Research</span>
+      </div>
+      <div data-reveal="" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:24px;">
+        <h2 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:clamp(30px,3.6vw,46px);line-height:1.12;letter-spacing:-0.3px;color:#2C2B28;margin:0;">The overlooked user group</h2>
+        <div style="display:inline-block;justify-self:start;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:11px;letter-spacing:0.5px;text-transform:uppercase;color:#6955BE;background:rgba(105,85,190,0.10);padding:6px 13px;border-radius:20px;">{{ researchFeature.tag }}</div>
+      </div>
+      <div data-reveal="" style="display:grid;grid-template-columns:0.95fr 1.05fr;gap:48px;align-items:start;">
+        <a href="#" onClick="{{ researchFeature.open }}" style="position:relative;display:block;text-decoration:none;border-radius:14px;overflow:hidden;border:0.5px solid #DEDAF0;transition:transform 0.35s,box-shadow 0.35s;order:2;" style-hover="transform:translateY(-3px);box-shadow:0 18px 40px rgba(105,85,190,0.18);">
+          <div style="aspect-ratio:4/3;background:#FEFDFB;display:flex;align-items:center;justify-content:center;padding:8%;box-sizing:border-box;">
+            <img src="uploads/case study UXR-6e16305a.png" alt="A magnifying glass over a user icon on a tablet, revealing two related caregiver profiles behind it" style="display:block;width:100%;height:100%;object-fit:contain;">
+          </div>
+          <span style="position:absolute;bottom:14px;right:14px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:#FEFDFB;background:rgba(105,85,190,0.92);padding:6px 12px;border-radius:16px;">{{ researchFeature.time }}</span>
+          <span style="position:absolute;top:14px;left:14px;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.6px;text-transform:uppercase;color:#FEFDFB;background:rgba(44,43,40,0.78);padding:5px 11px;border-radius:14px;">Lead case</span>
+        </a>
+        <div style="order:1;">
+          <h3 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:clamp(26px,2.8vw,34px);line-height:1.16;letter-spacing:-0.3px;color:#2C2B28;margin:0 0 16px;">{{ researchFeature.title }}</h3>
+          <p style="font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.7;color:#5C5B56;margin:0 0 28px;text-wrap:pretty;">{{ researchFeature.subtitle }}</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px 28px;padding:22px 0;border-top:0.5px solid #DEDAF0;border-bottom:0.5px solid #DEDAF0;margin-bottom:28px;">
+            <sc-for list="{{ researchFeature.meta }}" as="m" hint-placeholder-count="4">
+              <div>
+                <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.8px;text-transform:uppercase;color:#9C9A92;margin-bottom:5px;">{{ m.label }}</div>
+                <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;line-height:1.4;color:#2C2B28;">{{ m.value }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <a href="#" onClick="{{ researchFeature.open }}" style="display:inline-flex;align-items:center;gap:9px;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.3px;color:#FEFDFB;text-decoration:none;background:#6955BE;padding:13px 24px;border-radius:24px;transition:background 0.3s,box-shadow 0.3s,transform 0.3s;" style-hover="background:#54449B;box-shadow:0 10px 24px rgba(105,85,190,0.32);transform:translateY(-2px);">Read the full case<span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCHOPS SYNTHESIS -->
+  <section id="ops" style="background:#FEFDFB;padding:130px 48px;position:relative;overflow:hidden;">
+    <div data-reveal="" style="max-width:760px;margin:0 auto 64px;text-align:center;">
+      <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:24px;">
+        <span style="width:13px;height:13px;border-radius:50%;background:rgba(0,109,115,0.55);mix-blend-mode:multiply;display:inline-block;"></span>
+        <span style="width:13px;height:13px;border-radius:50%;background:rgba(105,85,190,0.55);mix-blend-mode:multiply;display:inline-block;margin-left:-6px;"></span>
+      </div>
+      <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#9C9A92;margin-bottom:20px;">Research Operations</div>
+      <h2 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:clamp(30px,4vw,52px);line-height:1.12;letter-spacing:-0.4px;color:#2C2B28;margin:0 0 24px;">Design to improve Research</h2>
+      <p style="font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.7;color:#5C5B56;margin:0;">DocPlanner · 2025–present. ResearchOps isn't a third parallel skill: it's the result of fusing process design with an understanding of research. Scaling, democratization, and AI fluency as daily practice.</p>
+    </div>
+    <div style="max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:28px;">
+      <sc-for list="{{ opsCases }}" as="c" hint-placeholder-count="2">
+        <a href="#" onClick="{{ c.open }}" data-reveal="" style="text-decoration:none;background:#F7F5F0;border:0.5px solid #EDEBE5;border-radius:12px;overflow:hidden;display:block;transition:border-color 0.3s,transform 0.3s;" style-hover="border-color:#2C2B28;transform:translateY(-3px);">
+          <div style="aspect-ratio:16/9;background:{{ c.imgBg }};display:flex;align-items:center;justify-content:center;padding:{{ c.imgPad }};box-sizing:border-box;">
+            {{ c.imageEl }}
+            <sc-if value="{{ c.showSlot }}" hint-placeholder-val="">
+              <span style="font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#9C9A92;letter-spacing:0.4px;">{{ c.slot }}</span>
+            </sc-if>
+          </div>
+          <div style="padding:22px 24px 26px;">
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:11px;letter-spacing:0.4px;text-transform:uppercase;color:#5C5B56;margin-bottom:12px;">{{ c.tags }}</div>
+            <h3 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:21px;line-height:1.25;color:#2C2B28;margin:0 0 8px;">{{ c.title }}</h3>
+            <p style="font-family:'Source Serif 4',Georgia,serif;font-size:14px;line-height:1.6;color:#5C5B56;margin:0 0 16px;">{{ c.subtitle }}</p>
+            <span style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#9C9A92;">{{ c.time }}</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" style="background:#F7F5F0;padding:120px 48px;border-top:0.5px solid #EDEBE5;">
+    <div style="max-width:1320px;margin:0 auto;display:grid;grid-template-columns:0.85fr 1.15fr;gap:64px;align-items:start;">
+      <div data-reveal="">
+        <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#9C9A92;margin-bottom:20px;">About</div>
+        <h2 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:clamp(28px,3.2vw,42px);line-height:1.14;letter-spacing:-0.3px;color:#2C2B28;margin:0 0 28px;">A 7+ year arc, one precise direction.</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;">
+          <a href="uploads/AnnaFocaroli_CV(en).pdf" download="AnnaFocaroli_CV(en).pdf" onClick="{{ downloadCvEn }}" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.4px;color:#FEFDFB;text-decoration:none;background:#2C2B28;padding:12px 22px;border-radius:24px;display:inline-block;transition:background 0.3s,box-shadow 0.3s,transform 0.3s;" style-hover="background:#006D73;box-shadow:0 10px 24px rgba(44,43,40,0.32);transform:translateY(-2px);">Download CV (English) ↓</a>
+          <a href="uploads/AnnaFocaroli_CV(it).pdf" download="AnnaFocaroli_CV(it).pdf" onClick="{{ downloadCvIt }}" style="font-family: 'Helvetica Neue',Arial,sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.4px; color: #2C2B28; text-decoration: none; background: #F7F5F0; padding: 12px 22px; border-radius: 24px; display: inline-block; border: 0.5px solid #EDEBE5; border-color: #2C2B28; transition:background 0.3s,box-shadow 0.3s,transform 0.3s;" style-hover="background:#EDEBE5;box-shadow:0 10px 24px rgba(44,43,40,0.32);transform:translateY(-2px);">Download CV (Italian) ↓</a>
+        </div>
+      </div>
+      <div data-reveal="" style="display:grid;gap:28px;">
+<p style="font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.75;color:#5C5B56;margin:0;">I build the tooling, workflows, and governance that enable product teams to conduct research safely and at scale. Knowing the people behind a product is the first step to making it work in their lives.</p>
+        <blockquote style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:17px;line-height:1.7;color:#006D73;border-left:2px solid #B2E0DE;padding-left:16px;margin:0;">"The more people understand each other's needs, the closer we get to meeting real needs and creating needed solutions."</blockquote>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <sc-for list="{{ skills }}" as="s" hint-placeholder-count="6">
+            <span style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:11px;letter-spacing:0.3px;text-transform:uppercase;color:#5C5B56;background:#FEFDFB;border:0.5px solid #EDEBE5;padding:6px 13px;border-radius:20px;">{{ s }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" style="background:#2C2B28;color:#FEFDFB;padding:110px 48px 56px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:40px;right:80px;display:flex;">
+      <span style="width:80px;height:80px;border-radius:50%;background:rgba(0,140,148,0.5);display:inline-block;"></span>
+      <span style="width:80px;height:80px;border-radius:50%;background:rgba(130,114,208,0.5);display:inline-block;margin-left:-34px;"></span>
+    </div>
+    <div style="max-width:1320px;margin:0 auto;position:relative;">
+      <h2 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:clamp(34px,5vw,64px);line-height:1.05;letter-spacing:-0.5px;margin:0 0 40px;max-width:18ch;">Let's talk research, processes, and people.</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-bottom:80px;">
+        <a href="mailto:anna.focaroli@gmail.com" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:14px;color:#2C2B28;background:#FEFDFB;text-decoration:none;padding:14px 26px;border-radius:26px;" style-hover="background:#B2E0DE;">Email</a>
+        <a href="https://www.linkedin.com/in/anna-focaroli-af1899a3/" target="_blank" rel="noopener" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:14px;color:#FEFDFB;text-decoration:none;padding:14px 26px;border-radius:26px;border:1px solid rgba(254,253,251,0.3);" style-hover="border-color:#FEFDFB;">LinkedIn</a>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding-top:28px;border-top:0.5px solid rgba(254,253,251,0.16);font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;letter-spacing:0.4px;color:#9C9A92;">
+        <span>© 2026 Anna Focaroli — Research Operations</span>
+        <span>Service Design · User Research · ResearchOps</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PASSWORD GATE -->
+  <sc-if value="{{ pendingCase }}" hint-placeholder-val="">
+    <div onClick="{{ cancelPassword }}" style="position:fixed;inset:0;z-index:210;background:rgba(28,27,25,0.55);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:24px;">
+      <form onSubmit="{{ submitPassword }}" onClick="{{ stop }}" style="width:100%;max-width:400px;background:#FEFDFB;border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,0.32);padding:38px 34px 32px;box-sizing:border-box;">
+        <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:20px;">
+          <span style="width:11px;height:11px;border-radius:50%;background:rgba(105,85,190,0.7);mix-blend-mode:multiply;display:inline-block;"></span>
+          <span style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:11px;letter-spacing:0.8px;text-transform:uppercase;color:#6955BE;">Protected case study</span>
+        </div>
+        <h3 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:400;font-size:22px;line-height:1.25;color:#2C2B28;margin:0 0 8px;">{{ pendingTitle }}</h3>
+        <p style="font-family:'Source Serif 4',Georgia,serif;font-size:15px;line-height:1.6;color:#5C5B56;margin:0 0 22px;">This case study is password-protected. Enter the password to read it.</p>
+        <input type="password" value="{{ pwInput }}" onChange="{{ onPwChange }}" onInput="{{ onPwChange }}" placeholder="Password" autoFocus="{{ true }}" style="width:100%;box-sizing:border-box;font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;color:#2C2B28;padding:13px 15px;border:1.5px solid {{ pwBorder }};border-radius:10px;outline:none;margin-bottom:10px;transition:border-color 0.25s;" style-focus="border-color:#6955BE;">
+        <sc-if value="{{ pwError }}" hint-placeholder-val="">
+          <p style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12.5px;color:#C0392B;margin:0 0 14px;">Wrong password — try again.</p>
+        </sc-if>
+        <div style="display:flex;gap:10px;margin-top:8px;">
+          <button type="submit" style="flex:1;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.3px;color:#FEFDFB;background:#6955BE;border:none;padding:13px 20px;border-radius:24px;cursor:pointer;transition:background 0.3s;" style-hover="background:#54449B;">Unlock &amp; read</button>
+          <button type="button" onClick="{{ cancelPassword }}" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.3px;color:#5C5B56;background:transparent;border:1px solid #EDEBE5;padding:13px 20px;border-radius:24px;cursor:pointer;transition:background 0.3s;" style-hover="background:#F7F5F0;">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </sc-if>
+
+  <!-- CASE STUDY READER -->
+  <sc-if value="{{ activeCaseData }}" hint-placeholder-val="">
+    <div onClick="{{ closeCase }}" style="position:fixed;inset:0;z-index:200;background:rgba(28,27,25,0.55);backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;padding:0;">
+      <article onClick="{{ stop }}" style="position:relative;width:100%;max-width:780px;min-height:100%;background:#FEFDFB;box-shadow:0 0 60px rgba(0,0,0,0.3);">
+        <!-- accent header band -->
+        <div style="height:6px;background:{{ activeCaseData.accent }};"></div>
+        <!-- close -->
+        <button onClick="{{ closeCase }}" aria-label="Close" style="position:fixed;top:20px;right:calc(50% - 390px + 20px);z-index:3;width:42px;height:42px;border-radius:50%;border:0.5px solid #EDEBE5;background:#FEFDFB;color:#2C2B28;font-size:20px;line-height:1;cursor:pointer;box-shadow:0 6px 18px rgba(44,43,40,0.16);display:flex;align-items:center;justify-content:center;transition:background 0.25s,transform 0.25s;" style-hover="background:#F7F5F0;transform:scale(1.06);">×</button>
+        <div style="padding:54px clamp(28px,6vw,68px) 80px;">
+          <div style="display:inline-block;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:11px;letter-spacing:0.6px;text-transform:uppercase;color:{{ activeCaseData.accent }};background:{{ activeCaseData.accentSoft }};padding:6px 13px;border-radius:20px;margin-bottom:22px;">{{ activeCaseData.tag }}</div>
+          <h2 style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:300;font-size:clamp(30px,4.4vw,46px);line-height:1.1;letter-spacing:-0.4px;color:#2C2B28;margin:0 0 20px;">{{ activeCaseData.title }}</h2>
+          <p style="font-family:'Source Serif 4',Georgia,serif;font-size:19px;line-height:1.6;color:#5C5B56;margin:0 0 34px;">{{ activeCaseData.subtitle }}</p>
+          <!-- meta -->
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px 28px;padding:26px 0;border-top:0.5px solid #EDEBE5;border-bottom:0.5px solid #EDEBE5;margin-bottom:42px;">
+            <sc-for list="{{ activeCaseData.meta }}" as="m" hint-placeholder-count="4">
+              <div>
+                <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:10px;letter-spacing:0.8px;text-transform:uppercase;color:#9C9A92;margin-bottom:5px;">{{ m.label }}</div>
+                <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;color:#2C2B28;">{{ m.value }}</div>
+              </div>
+            </sc-for>
+          </div>
+          <!-- optional case image (grayscale), rendered only when present -->
+          {{ caseImageEl }}
+          <!-- body sections (before the gated group) -->
+          <sc-for list="{{ preSections }}" as="sec" hint-placeholder-count="2">
+            <section style="margin-bottom:38px;">
+              <h3 style="display:flex;align-items:center;gap:10px;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.8px;text-transform:uppercase;color:{{ activeCaseData.accent }};margin:0 0 16px;">
+                <span style="width:8px;height:8px;border-radius:50%;background:{{ activeCaseData.accent }};display:inline-block;"></span>{{ sec.heading }}
+              </h3>
+              <sc-for list="{{ sec.paras }}" as="para" hint-placeholder-count="2">
+                <p style="font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.75;color:#3A3935;margin:0 0 16px;text-wrap:pretty;">{{ para }}</p>
+              </sc-for>
+            </section>
+          </sc-for>
+          <!-- gated group: "The system" sub-sections -->
+          <sc-if value="{{ hasLockedSections }}" hint-placeholder-val="">
+            <sc-if value="{{ sysUnlocked }}" hint-placeholder-val="">
+              <sc-for list="{{ lockedSections }}" as="sec" hint-placeholder-count="0">
+                <section style="margin-bottom:38px;">
+                  <h3 style="display:flex;align-items:center;gap:10px;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.8px;text-transform:uppercase;color:{{ activeCaseData.accent }};margin:0 0 16px;">
+                    <span style="width:8px;height:8px;border-radius:50%;background:{{ activeCaseData.accent }};display:inline-block;"></span>{{ sec.heading }}
+                  </h3>
+                  <sc-for list="{{ sec.paras }}" as="para" hint-placeholder-count="2">
+                    <p style="font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.75;color:#3A3935;margin:0 0 16px;text-wrap:pretty;">{{ para }}</p>
+                  </sc-for>
+                </section>
+              </sc-for>
+            </sc-if>
+            <sc-if value="{{ sysLocked }}" hint-placeholder-val="">
+              <form onSubmit="{{ submitSysPassword }}" style="margin:8px 0 40px;padding:30px 28px;border:1px dashed #C9C5BB;border-radius:14px;background:#F7F5F0;">
+                <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px;">
+                  <span style="display:inline-flex;align-items:center;"><span style="width:11px;height:11px;border-radius:50%;background:rgba(0,109,115,0.7);mix-blend-mode:multiply;display:inline-block;"></span><span style="width:11px;height:11px;border-radius:50%;background:rgba(105,85,190,0.7);mix-blend-mode:multiply;display:inline-block;margin-left:-5px;"></span></span>
+                  <span style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:11px;letter-spacing:0.8px;text-transform:uppercase;color:#5C5B56;">Protected — the system in detail</span>
+                </div>
+                <p style="font-family:'Source Serif 4',Georgia,serif;font-size:16px;line-height:1.65;color:#5C5B56;margin:0 0 18px;max-width:52ch;">The detailed breakdown below is password-protected. Enter the password to read it.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+                  <input type="password" value="{{ sysPwInput }}" onChange="{{ onSysPwChange }}" onInput="{{ onSysPwChange }}" placeholder="Password" style="flex:1;min-width:200px;box-sizing:border-box;font-family:'Helvetica Neue',Arial,sans-serif;font-size:15px;color:#2C2B28;padding:13px 15px;border:1.5px solid {{ sysPwBorder }};border-radius:10px;outline:none;background:#FEFDFB;transition:border-color 0.25s;" style-focus="border-color:#2C2B28;">
+                  <button type="submit" style="font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.3px;color:#FEFDFB;background:#2C2B28;border:none;padding:14px 24px;border-radius:24px;cursor:pointer;transition:background 0.3s;" style-hover="background:#006D73;">Unlock</button>
+                </div>
+                <sc-if value="{{ sysPwError }}" hint-placeholder-val="">
+                  <p style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12.5px;color:#C0392B;margin:12px 0 0;">Wrong password — try again.</p>
+                </sc-if>
+              </form>
+            </sc-if>
+          </sc-if>
+          <!-- body sections (after the gated group) -->
+          <sc-for list="{{ postSections }}" as="sec" hint-placeholder-count="2">
+            <section style="margin-bottom:38px;">
+              <h3 style="display:flex;align-items:center;gap:10px;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.8px;text-transform:uppercase;color:{{ activeCaseData.accent }};margin:0 0 16px;">
+                <span style="width:8px;height:8px;border-radius:50%;background:{{ activeCaseData.accent }};display:inline-block;"></span>{{ sec.heading }}
+              </h3>
+              <sc-for list="{{ sec.paras }}" as="para" hint-placeholder-count="2">
+                <p style="font-family:'Source Serif 4',Georgia,serif;font-size:17px;line-height:1.75;color:#3A3935;margin:0 0 16px;text-wrap:pretty;">{{ para }}</p>
+              </sc-for>
+            </section>
+          </sc-for>
+          <!-- official project link (case-specific) -->
+          {{ officialLinkEl }}
+          <!-- footer cta -->
+          <button onClick="{{ closeCase }}" style="margin-top:14px;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:500;font-size:13px;letter-spacing:0.3px;color:#FEFDFB;background:#2C2B28;border:none;padding:13px 24px;border-radius:24px;cursor:pointer;transition:background 0.3s;" style-hover="background:{{ activeCaseData.accent }};">← Back to portfolio</button>
+        </div>
+      </article>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { hover: null, activeCase: null, pendingCase: null, pwInput: '', pwError: false, unlocked: {}, sysUnlocked: {}, sysPwInput: '', sysPwError: false };
+
+  // case studies that require a password before opening
+  locked = { overlooked: 'ResearchAnna_2023' };
+  // in-modal password for the "The system" sub-sections
+  sysLockPw = 'ResearchAnna_2026';
+
+  cases = {
+    water: {
+      accent: '#006D73', accentSoft: 'rgba(0,109,115,0.10)',
+      tag: 'Service Design · Systems · UI',
+      title: 'Designing a Water Management System',
+      subtitle: 'From a vague brief to an adaptive dashboard that organizes thousands of data points without overwhelming the people who use it — from field research to handoff.',
+      time: '~3 min read',
+      meta: [
+        { label: 'Studio', value: 'Tangity / NTT Data' },
+        { label: 'Role', value: 'UX & Service Designer' },
+        { label: 'Team', value: '3 people' },
+        { label: 'Process', value: 'Define → Make → Refine' },
+      ],
+      sections: [
+        { heading: 'Context & problem', paras: ['A leader in robotic products asked for a system to manage water resources, able to control a complex network of existing and new systems. The UX challenge was precise: organizing a wide range of data in an adaptive space — a network of variable size, from a city section to far larger areas, with a map dense in coded symbols for leaks, pressure and other values. The constant risk was visual overload.'] },
+        { heading: 'Approach — three phases', paras: ['Define. Given how little detail was available at the start, I ran field research: 13 interviews with internal stakeholders in contact with end users, and 2 workshops. Unable to reach users directly, I used empathy maps to extract their needs and tasks from the people working alongside them, and a pre-mortem to surface potential barriers — turning an access constraint into a structured method.', 'Make. I proposed two concepts — one centered on the map, one on data widgets — and validated them with a survey built to make participants reason about features, not aesthetics. The final concept emerged from the convergence: the map as the main space, with widgets guiding monitoring.', 'Refine. With visual requirements drawn from the ABB style and dashboard-design benchmarks, I presented the UI in coordination with developers and visual experts, handling the complexity of the symbols without overloading. The final interface articulated a header, overview panel, filterable alert panel, map, timeline and a preset sidebar for personalized views.'] },
+        { heading: 'Outcome', paras: ['An adaptive solution, able to easily integrate new variations — valuable, since the references weren\u2019t available at the start. After delivery, I documented all components and their interactions for developers, in a repository that serves as a reference for future development. Midway through, the team moved to remote work for the pandemic, still reaching strong results thanks to adaptability and cohesion.'] },
+        { heading: 'What it shows', paras: ['The ability to carry a complex project from research to the threshold of development: field research, concept, validation, UI, handoff. And problem solving under constraint — the empathy map to work around the lack of user access, the adaptive solution for variable-size data, the shift to remote work imposed by the pandemic.'] },
+      ],
+    },
+    aida: {
+      accent: '#006D73', accentSoft: 'rgba(0,109,115,0.10)',
+      tag: 'Design Research · AI · Action Research',
+      officialUrl: 'https://tangity.global/works/aida/',
+      title: 'Designing AI solutions to enhance human experiences',
+      subtitle: 'Research and design in a sensitive field like autism could be a challenge, but with the collaboration between us, designers, and the team of AI experts, we could find an evergreen solution: a model that learns from multiple perspectives to guide the best approach without absorbing biases.',
+      time: '~5 min read',
+
+      meta: [
+        { label: 'Company', value: 'Tangity / NTT Data (internal project)' },
+        { label: 'Role', value: 'Designer & Researcher' },
+        { label: 'Recognition', value: 'Service Design Fringe Festival, WUD Milan' },
+        { label: 'Period', value: '2020-2022' },
+      ],
+      sections: [
+        { heading: 'Context', paras: ['AIDA stands for Artificial Intelligence Design for Autism, and it was an internal Tangity project. Its goal is to create an AI system that helps the people closest to children on the autism spectrum (parents, educators, teachers) communicate effectively and manage crises.', "The project was a collaboration between the design team and the AI team, applied to a field as complex as autism. My role was twofold: Designer and Research Activities Manager, responsible for setting up and coordinating research activities while supporting the solution's design process."] },
+        { heading: 'The problem', paras: ['**The delicacy of the field.**\nGathering information about young people with ASD requires extreme caution: novel events, such as unexpected interactions, can have negative impacts on the subjects. To collect data about their lives and difficulties, it was essential to build relationships with the people closest to them, educators, therapists, families, rather than interacting directly.', '**The complexity of the domain.**\nAutism is a broad, multifaceted subject that takes years of experience and study to understand deeply. Involving field experts wasn\u2019t optional: it was necessary to gather the right insights and to frame the problem correctly.'] },
+        { heading: 'Approach', paras: ['I set up a collaborative, iterative, tailored research methodology grounded in the principles of action research, with participatory aspects at every phase. The choice came from the nature of the project: you couldn\u2019t study autism \u201cfrom the outside\u201d, but it requires a process that continuously involved the field\u2019s actors and adapted to what emerged.', 'I ran three main research activities: one-to-one interviews with parents and educators; co-definition workshops with autism experts to converge the findings; and a field safari at a summer camp with ASD children. The methodological core was cross-team coordination: research results were shared with the AI experts to select the next step. This came up as a cross-evaluation approach aimed at producing a reliable insight set for a credible AI model.', 'I synthesised the work into a journey map of a typical crisis event: it mapped the phases: routine, unexpected event, reaction, hypothesis, first and second attempt, communication, resolution; all of them across the perspectives of all the actors, with the emotional flow tied to each phase.'] },
+        { heading: 'The key insight', paras: ['Working with different kinds of caregivers, a decisive fact emerged: each one\u2019s role and background led them to see the child from a specific point of view that, by necessity, generated a set of biases in interpreting their behaviours and reactions.', 'The direct consequence for the system\u2019s design: for an AI model to be effective, it must account for different perspectives and learn from all stakeholders without absorbing their biases. A second insight flipped the common framing: most existing technology focuses on helping the child adapt to the \u201cnormal\u201d context; AIDA does the opposite, helping the context, the environment and the people understand children with ASD.'] },
+        { heading: 'Outcome', paras: ['*AIDA produced numerous reflections on the role of design in healthcare and AI.* Two pillars emerged as conditions for positive results: collaborating at every step, and ensuring mutual respect for others\u2019 skills and experience. It was an evolving, internal project, shared at international events such as the [Service Design Fringe Festival](https://www.linkedin.com/company/servicedesignfringefestival/about/) and WUD Milan, and it produced a mockup of the AIDA probe for the next phases.'] },
+        { heading: 'The thread to today', paras: ['The problem tackled in AIDA, recognising biases in human interpretations and preventing a model from absorbing them, is the same problem that, years later as a Research Operations Specialist, was made systematic by building a Claude skill for bias detection in interviews and surveys.'] },
+      ],
+    },
+    overlooked: {
+      accent: '#6955BE', accentSoft: 'rgba(105,85,190,0.10)',
+      tag: 'User Research · Product Impact · New Segments',
+      title: "Uncovering profiles' needs and their hidden impact",
+      subtitle: 'From a focused, self-directed study to a new product strategy. From an external pain point to a whole new section in the product.',
+      time: '~3 min read',
+      meta: [
+        { label: 'Company', value: 'DocPlanner' },
+        { label: 'Role', value: 'Product & User Researcher' },
+        { label: 'Methods', value: 'Interviews, Surveys, General data analysis' },
+        { label: 'Period', value: '2023' },
+      ],
+      sections: [
+        { heading: 'Context', paras: ['As designed in the product, we expected patients to search and book for themselves using their own profile. Indeed, data didn\u2019t show usage anomalies: patient used their own profile or booked for others through the dedicated option \u201cBook for someone else\u201d.', 'But talking to doctors for another project and with different goals, we detected a different signal of use: people were booking through others\u2019 profiles, others that they manage as caregivers. Leading with that insight, I shared a new perspective, a new opportunity area.'] },
+        { heading: 'Research questions', paras: ['*Who are the \u201chidden\u201d caregivers within our product ecosystem?*', '*How do they use it?*', 'What are their challenges behind such \u201cunexpected\u201d usage?'] },
+        { heading: 'Approach & why', paras: ['I combined quantitative data analysis, surveys and interviews.\nFirst, I verified the current state of product use through data analysis; then interviews with real users *and* caregivers (6); then a survey to validate the interview insights globally (300+ respondents).', 'At the end, it was confirmed that the data didn\u2019t reveal the real complexity of how one of the main user types, patients, was using the product: *users acting on behalf of others.*'] },
+        { heading: 'The key insight', paras: ['Users were accessing through the profiles of others they care for, to better manage those people\u2019s activities in the product. The usage data hid a far more complex need: the full care of third parties, for whom it was simpler to create and manage profiles directly.', 'Indeed, it all came from healthcare professionals reporting difficulty identifying patients versus those using someone else\u2019s account; then, these same type of patients reported needing full control over the profiles of their dependents.'] },
+        { heading: 'Impact & outcome', paras: ['The work led to deepening the needs of this user type and dedicating a space to them inside the product. It produced a new section and ad-hoc processes for this kind of patient, now used by hundreds of thousands of users.'] },
+        { heading: 'What it shows', paras: ['I promoted and designed an entirely autonomous research study starting from one user type\u2019s pain point, uncovering needs hidden in the data. I love diving deep on complex topics beyond data, and run research that genuinely impacts the product and how it\u2019s used, driving change through a 360° view of a problem, rather than stopping at single data points or predefined use cases.'] },
+      ],
+    },
+    scaling: {
+      accent: '#2C2B28', accentSoft: 'rgba(44,43,40,0.07)',
+      tag: 'Research Ops · Democratization · Automation · AI Tooling',
+      title: 'A research system for 10+ teams and diverse roles',
+      subtitle: 'From centralised research to scalable self-service — enabling 30–40 people across managers, designers and developers to run research on their own, without giving up quality, ethics or compliance.',
+      time: '~5 min read',
+      meta: [
+        { label: 'Role', value: 'Product & Research Operations Specialist' },
+        { label: 'Company', value: 'DocPlanner' },
+        { label: 'Period', value: 'Jun 2025 – present' },
+        { label: 'Scope', value: '~10 teams · 30–40 people enabled' },
+      ],
+      sections: [
+        { heading: 'Context', paras: ['At the beginning, anyone who wanted to run research had to go through multiple people and steps: discuss the idea with the researcher, then check with the operations specialist the tool options and timeline, then go back to the researcher to review the plan considering the received recommendations, etc. Defining and setting up a discovery activity took long back-and-forths that stretched delivery times.', 'Then the discovery scope even expanded: more than 10 teams, each with at least 2–3 people, were enabled and encouraged to run research autonomously. The challenge: serve those teams quickly, with no extra support roles or very little, while guaranteeing quality and safety. This meant easing the collection of requests, tracking of activities, and privacy compliance.'] },
+        { heading: 'The operational challenge', paras: ['How do you enable 10+ product teams and their varied roles, like managers, designers, developers, with different backgrounds and goals, to listen to the users they build for, guaranteeing both quality and autonomy, without compromising ethics, compliance and methodological rigour?'] },
+        { heading: 'The System 1 - request management', locked: true, paras: ['Previously, requests came in ad hoc through individual researchers. I introduced a structured intake form that verifies all the information is ready before an activity can start, cutting roughly 50% of the time to kick a project off.'] },
+        { heading: 'The system 2 - Apps Script for translation, anonymisation and monitoring', locked: true, paras: ['**Tracking recruitment for improvements:**\nAttendance and no-shows (with type/origin) computed across multiple files and unified into a single spreadsheet and dashboard.', '**Ensure compliance across scaled-up research:**\nBatch anonymisation runs only on files older than 3 years (GDPR retention).', '**Manage global discovery for language accessibility:**\nScripts and multilingual survey responses are translated and consolidated into one tab.'] },
+        { heading: "The system 3 - N8N to automate research requests' management", locked: true, paras: ['**Minimise back-and-forth interactions to speed up the research support process**', '1. When submitting a research request, an automated message is sent to the requester and the Ops specialist assigned with the next steps to enable recruiting (calendar set-up, tracking file creation, etc.)', '2. At the end of an interview activity, the produced material (recordings and transcriptions) is requested and moved to proceed with automatic anonymisation (as described in system 2)', '3. When conducting simple in-product surveys, like CSAT, an AI pre-analysis of the responses speeds up analysis and reporting directly to the dedicated team.'] },
+        { heading: 'The system 5 - templates&training for non-researchers doing research', locked: true, paras: ['I created and shared 5 self-service templates for interviews, surveys and reports, plus 2 training programs (privacy and bias detection) for everyone running research, which includes Claude skills to put method know-how directly in people\u2019s hands.'] },
+        { heading: 'The design–research bridge', paras: ["I applied my *designer skills* to work on enhancing research experiences, making the internal workflows smoother with enhanced internal services and learning journeys.", "I used my *researcher's side* to provide and check methods and templates to ensure a good quality of results and compliant outputs.", '**This is my secret-skill-combo: Designing for better Research.**'] },
+        { heading: 'Impact & outcome', paras: ['20+ teams and people enabled and trained.', 'Time saved: ~20% on recruitment, ~50% on tracking and privacy management.', 'Compliance: automations that keep GDPR/PII in control as scale grows.', 'Adoption: 90%+ completed the core privacy training.', '**I didn\u2019t solve single or one-time problems; I built a scalable and sustainable infrastructure.**'] },
+      ],
+    },
+    bias: {
+      accent: '#2C2B28', accentSoft: 'rgba(44,43,40,0.07)',
+      tag: 'AI skill-building · Bias Detection · Training Design · Responsible Research',
+      title: 'From training to skill: bias detection with Claude',
+      subtitle: 'Designing the training on cognitive bias, then translating it into an AI skill that guides people to sharpen their own discovery skills. The goal: improving research competence and output across product teams.',
+      time: '~4 min read',
+      meta: [
+        { label: 'Role', value: 'Product & Research Operations Specialist' },
+        { label: 'Company', value: 'DocPlanner' },
+        { label: 'Period', value: '2026' },
+        { label: 'Status', value: 'In use / in progress' },
+      ],
+      sections: [
+        { heading: 'Context', paras: ['When you democratize research, like 10 teams, for a total of 30–40 non-researchers, quality is at risk. People without training can introduce bias without noticing, and that can cascade into designing or building features that are unhelpful or simply wrong.', 'But, a researcher can\u2019t sit in on every interview, nor review every output produced.\nSo, how do you guarantee quality at scale?', 'The idea: first teach people to recognise bias (training), then give them a tool that detects it automatically (a Claude skill) and guides them, step by step, to improve on their own mistakes. What makes this rare is the combination it demands: training design, qualitative-research method expertise, research ethics, and AI tooling.'] },
+        { heading: 'The challenge', paras: ['How do you help non-researchers identify and mitigate the biases they unintentionally introduce in their discovery work, without the constant supervision of a trained researcher?'] },
+        { heading: 'Phase 1: The training', locked: true, paras: ['Built for product managers, designers and developers: an asynchronous course with an AI-voiced narrator, working through real, recognisable scenarios rather than abstract theory.', 'It covers the risks of introducing cognitive bias into research: how to recognise the main biases that creep into qualitative research, interviews and usability tests, from both the interviewer\u2019s and the participant\u2019s side, and the key strategies to mitigate them.', 'The teaching approach combines interactive elements and checks, so the \u201cstudent\u201d can test their own competence live and recognise themselves in the scenarios shown.', '*Training outcomes: still collecting.*'] },
+        { heading: 'Phase 2: The Claude skill', locked: true, paras: ['At a high level:', '1. The user provides one or more interview transcripts or survey results', '2. The skill asks a few questions to understand the context better', '3. The skill analyses the material, flags where a bias was introduced, suggests mitigation strategies, and, on request, produces a detailed analysis report.', '**Input:** an interview transcript, a set of survey questions and answers, or just the discussion guide.', '**Output:** specific insights on the biases identified, a suggested rephrasing or alternative strategy, the risks tied to each bias found, and, on request, a detailed report of the analysis.', 'I authored a guide to the main biases found in interviews, tests and surveys, with examples and practical output templates for users. I iterated by testing the skill against different materials, checking the accuracy and depth of its outputs.', '**Identified limits:** the skill doesn\u2019t test whether someone has actually understood and applied what they learned; the asynchronous training exists both to give a general grounding in the topic and to practice the strategies that the skill and the course both provide.', 'However, with this combo-solution we aim to keep track of biases, as we have access to raw materials anyway, and make them visible with the impact they would and actually bring.', 'Moreover, this project plans to create a live and in-person process to engage people and verify their involvement in the topic.'] },
+        { heading: 'The training–AI bridge', paras: ['The goal of the skill isn\u2019t to replace the training, but to amplify it. People who\u2019ve been trained and are guided by the AI recognise the red flags of the biases they introduce. From their very first interview transcripts, new interviewers can test their skills and improve how they listen and how they ask questions.', 'The training builds the context; the AI scales it. This is a continuous guide, tied to a learning path, that helps less experienced people do quality research by keep highlighting the impact of biased results and consequent decisions.'] },
+        { heading: 'Impact', paras: ['*Still being measured (work in progress).*'] },
+        { heading: 'What it shows', paras: ['I built concrete tools that solve one of the biggest problems in contexts where research is democratised: guaranteeing quality in user research, not just a higher volume of it. I drew on design skills (designing the training as an experience), research skills (knowing what biases are and how to detect them), and ops skills (building the tool that scales).', 'This case is the purest demonstration of who I am as a professional: someone who codifies their own expertise and makes it accessible to others, to create a bigger impact.'] },
+      ],
+    },
+  };
+
+  forceDownload(e, url, filename) {
+    if (e) e.preventDefault();
+    fetch(url)
+      .then((r) => r.blob())
+      .then((blob) => {
+        const blobUrl = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(blobUrl), 4000);
+      })
+      .catch(() => { window.open(url, '_blank'); });
+  }
+
+  openCase(id) {
+    return (e) => {
+      if (e) e.preventDefault();
+      if (this.locked[id] && !this.state.unlocked[id]) {
+        this.setState({ pendingCase: id, pwInput: '', pwError: false });
+        return;
+      }
+      this.setState({ activeCase: id });
+    };
+  }
+
+  submitSysPassword = (e) => {
+    if (e) e.preventDefault();
+    const id = this.state.activeCase;
+    if (!id) return;
+    if (this.state.sysPwInput === this.sysLockPw) {
+      this.setState((s) => ({ sysUnlocked: { ...s.sysUnlocked, [id]: true }, sysPwInput: '', sysPwError: false }));
+    } else {
+      this.setState({ sysPwError: true });
+    }
+  };
+
+  submitPassword = (e) => {
+    if (e) e.preventDefault();
+    const id = this.state.pendingCase;
+    if (!id) return;
+    if (this.state.pwInput === this.locked[id]) {
+      this.setState((s) => ({ unlocked: { ...s.unlocked, [id]: true }, activeCase: id, pendingCase: null, pwInput: '', pwError: false }));
+    } else {
+      this.setState({ pwError: true });
+    }
+  };
+
+  buildPara(text) {
+    if (typeof text !== 'string' || !/\*\*|\*|\[.+?\]\(.+?\)/.test(text)) return text;
+    const re = /\*\*(.+?)\*\*|\*(.+?)\*|\[(.+?)\]\((.+?)\)/g;
+    const nodes = [];
+    let last = 0, m, i = 0;
+    while ((m = re.exec(text))) {
+      if (m.index > last) nodes.push(text.slice(last, m.index));
+      if (m[1] !== undefined) nodes.push(React.createElement('strong', { key: i++ }, m[1]));
+      else if (m[2] !== undefined) nodes.push(React.createElement('em', { key: i++ }, m[2]));
+      else nodes.push(React.createElement('a', { key: i++, href: m[4], target: '_blank', rel: 'noopener', style: { color: 'inherit', textDecoration: 'underline' } }, m[3]));
+      last = re.lastIndex;
+    }
+    if (last < text.length) nodes.push(text.slice(last));
+    return React.createElement(React.Fragment, null, nodes);
+  }
+
+  splitSections() {
+    const c = this.cases[this.state.activeCase];
+    if (!c) return { pre: [], locked: [], post: [] };
+    const secs = (c.sections || []).map((s) => ({ ...s, paras: s.paras.map((p) => this.buildPara(p)) }));
+    const firstLocked = secs.findIndex((s) => s.locked);
+    if (firstLocked === -1) return { pre: secs, locked: [], post: [] };
+    let lastLocked = firstLocked;
+    for (let i = firstLocked; i < secs.length; i++) { if (secs[i].locked) lastLocked = i; }
+    return {
+      pre: secs.slice(0, firstLocked),
+      locked: secs.slice(firstLocked, lastLocked + 1),
+      post: secs.slice(lastLocked + 1),
+    };
+  }
+
+  buildCardImage(image, alt) {
+    if (!image) return null;
+    return React.createElement('img', { src: image, alt: alt || '', style: { display: 'block', width: '100%', height: '100%', objectFit: 'contain' } });
+  }
+
+  buildOfficialLink() {
+    const c = this.cases[this.state.activeCase];
+    if (!c || !c.officialUrl) return null;
+    return React.createElement('a', {
+      href: c.officialUrl, target: '_blank', rel: 'noopener',
+      style: { display: 'block', width: 'fit-content', alignItems: 'center', gap: '8px', fontFamily: "'Helvetica Neue',Arial,sans-serif", fontWeight: 500, fontSize: '13px', letterSpacing: '0.3px', color: c.accent, textDecoration: 'none', marginTop: '8px', marginBottom: '20px' },
+    }, ['View the official project page ↗']);
+  }
+
+  buildCaseImage() {
+    const c = this.cases[this.state.activeCase];
+    if (!c || !c.image) return null;
+    return React.createElement('figure', { style: { margin: '0 0 42px' } }, [
+      React.createElement('img', { key: 'img', src: c.image, alt: c.imageAlt || '', style: { display: 'block', width: '100%', borderRadius: '12px', filter: 'grayscale(100%)' } }),
+      React.createElement('figcaption', { key: 'cap', style: { fontFamily: "'Helvetica Neue',Arial,sans-serif", fontSize: '12px', letterSpacing: '0.3px', color: '#9C9A92', marginTop: '10px' } }, c.imageCaption || ''),
+    ]);
+  }
+
+  renderVals() {
+    const hover = this.state.hover;
+    const labels = { service: 'Service & UX Design', research: 'User & Product Research' };
+    const bg = { service: '#006D73', research: '#6955BE' };
+    return {
+      hover,
+      hoverLabel: hover ? labels[hover] : '',
+      hoverBg: hover ? bg[hover] : '#2C2B28',
+      hoverX: hover === 'research' ? '65.5%' : '34.3%',
+      opsHover: hover === 'ops',
+      opsLinkColor: hover === 'ops' ? '#2C2B28' : '#5C5B56',
+      opsOpacity: hover === 'ops' ? 1 : 0,
+      opsShift: hover === 'ops' ? '0px' : '6px',
+      onEnterService: () => this.setState({ hover: 'service' }),
+      onEnterResearch: () => this.setState({ hover: 'research' }),
+      onEnterOps: () => this.setState({ hover: 'ops' }),
+      onLeave: () => this.setState({ hover: null }),
+      lensService: (el) => { this._ls = el; },
+      lensResearch: (el) => { this._lr = el; },
+      activeCaseData: this.cases[this.state.activeCase] || null,
+      caseImageEl: this.buildCaseImage(),
+      officialLinkEl: this.buildOfficialLink(),
+      preSections: this.splitSections().pre,
+      lockedSections: this.splitSections().locked,
+      postSections: this.splitSections().post,
+      hasLockedSections: this.splitSections().locked.length > 0,
+      sysUnlocked: !!this.state.sysUnlocked[this.state.activeCase],
+      sysLocked: this.splitSections().locked.length > 0 && !this.state.sysUnlocked[this.state.activeCase],
+      sysPwInput: this.state.sysPwInput,
+      sysPwError: this.state.sysPwError,
+      sysPwBorder: this.state.sysPwError ? '#C0392B' : '#E3E0D8',
+      onSysPwChange: (e) => this.setState({ sysPwInput: e.target.value, sysPwError: false }),
+      submitSysPassword: this.submitSysPassword,
+      closeCase: (e) => { if (e) e.preventDefault(); this.setState({ activeCase: null }); },
+      downloadCvEn: (e) => this.forceDownload(e, 'uploads/AnnaFocaroli_CV(en).pdf', 'AnnaFocaroli_CV(en).pdf'),
+      downloadCvIt: (e) => this.forceDownload(e, 'uploads/AnnaFocaroli_CV(it).pdf', 'AnnaFocaroli_CV(it).pdf'),
+      stop: (e) => { e.stopPropagation(); },
+      pendingCase: this.state.pendingCase,
+      pendingTitle: this.state.pendingCase ? this.cases[this.state.pendingCase].title : '',
+      pwInput: this.state.pwInput,
+      pwError: this.state.pwError,
+      pwBorder: this.state.pwError ? '#C0392B' : '#E3E0D8',
+      onPwChange: (e) => this.setState({ pwInput: e.target.value, pwError: false }),
+      submitPassword: this.submitPassword,
+      cancelPassword: (e) => { if (e) e.preventDefault(); this.setState({ pendingCase: null, pwInput: '', pwError: false }); },
+      serviceFeature: { id: 'aida', accent: '#006D73', accentSoft: 'rgba(0,109,115,0.10)', slot: 'aida · research visual', tag: this.cases.aida.tag, title: this.cases.aida.title, subtitle: this.cases.aida.subtitle, time: this.cases.aida.time, meta: this.cases.aida.meta, open: this.openCase('aida') },
+      researchFeature: { id: 'overlooked', accent: '#6955BE', accentSoft: 'rgba(105,85,190,0.10)', slot: 'docplanner · research visual', tag: this.cases.overlooked.tag, title: this.cases.overlooked.title, subtitle: this.cases.overlooked.subtitle, time: this.cases.overlooked.time, meta: this.cases.overlooked.meta, open: this.openCase('overlooked') },
+      opsCases: [
+        { slot: 'researchops · system diagram', imageEl: this.buildCardImage('uploads/case study ROPS1.png', 'A hexagon of interlocking gears connected to six user icons, representing a shared self-service system'), imgBg: '#FEFDFB', imgPad: '10%', tags: 'Scaling · Democratization · AI', title: 'Scaling and democratization', subtitle: 'From centralized research to scalable self-service — a system that enabled 30–40 people across 10+ teams.', time: '~5 min', open: this.openCase('scaling') },
+        { slot: 'bias · skill flow', imageEl: this.buildCardImage('uploads/case study ROPS2.png', 'A book feeding into a brain, which branches into three decision points and produces a checklist, representing training turning into an automated skill'), imgBg: '#FEFDFB', imgPad: '2%', tags: 'AI Fluency · Claude · Bias Detection', title: 'Bias detection with Claude', subtitle: 'From training to skill — an AI helper that guides non-researchers to spot and mitigate their own bias.', time: '~4 min', open: this.openCase('bias') },
+      ],
+      skills: ['Service Design', 'User Research', 'Research Ops', 'Journey Mapping', 'Personas Creation', 'Product Design & Research', 'AI Fluency', 'Stakeholder Mgmt', 'Workshop Facilitation'],
+    };
+  }
+
+  componentDidMount() {
+    const root = document.getElementById('af-portfolio');
+    if (!root) return;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // reveal on scroll
+    const reveals = root.querySelectorAll('[data-reveal]');
+    reveals.forEach((el) => {
+      if (reduce) return;
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1)';
+    });
+    if (!reduce) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'translateY(0)';
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      reveals.forEach((el) => io.observe(el));
+      this._io = io;
+    }
+
+    // scroll-spy: highlight the nav link of the section currently in view
+    const navLinks = {};
+    root.querySelectorAll('nav a[href^="#"]').forEach((a) => {
+      const id = a.getAttribute('href').slice(1);
+      navLinks[id] = a;
+      // remember the link's resting color so we can restore it
+      a._restColor = a.style.color;
+    });
+    const accent = { hero: '#2C2B28', service: '#006D73', research: '#6955BE', ops: '#2C2B28', about: '#2C2B28', contact: '#2C2B28' };
+    const setActive = (id) => {
+      if (this._activeNav === id) return;
+      this._activeNav = id;
+      Object.keys(navLinks).forEach((key) => {
+        const a = navLinks[key];
+        const on = key === id;
+        // the Contact pill keeps its own styling; only nudge its weight
+        if (key === 'contact') { a.style.boxShadow = on ? '0 6px 18px rgba(44,43,40,0.28)' : 'none'; return; }
+        a.style.color = on ? (accent[key] || '#2C2B28') : a._restColor;
+        a.style.fontWeight = on ? '600' : '500';
+        const dot = a.querySelector('span');
+        if (dot) dot.style.transform = on ? 'scale(1.25)' : 'scale(1)';
+      });
+    };
+    const spyTargets = ['hero', 'service', 'research', 'ops', 'about', 'contact']
+      .map((id) => document.getElementById(id)).filter(Boolean);
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) this._visible[e.target.id] = e.intersectionRatio; else delete this._visible[e.target.id]; });
+      let best = null, bestR = 0;
+      Object.keys(this._visible).forEach((id) => { if (this._visible[id] > bestR) { bestR = this._visible[id]; best = id; } });
+      if (best) setActive(best);
+    }, { threshold: [0.15, 0.4, 0.7], rootMargin: '-72px 0px -45% 0px' });
+    this._visible = {};
+    spyTargets.forEach((t) => { t.style.scrollMarginTop = '84px'; spy.observe(t); });
+    this._spy = spy;
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this._spy) this._spy.disconnect();
+  }
+}
+</script>
+</body>
+</html>
